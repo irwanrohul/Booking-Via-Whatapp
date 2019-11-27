@@ -101,8 +101,8 @@
             alert('Silahkan tulis ' + ph);
             $('#whatsapp .nama').focus();
             return false;
-		} else if ($('#whatsapp .provinsi').val() == '') { // Cek Provinsi
-            ph = $('#whatsapp .provinsi').attr('placeholder');
+		} else if ($('#whatsapp .provinsi').val() == '') { // Cek Kecamatan
+            ph = $('#whatsapp .kecamatan').attr('placeholder');
             alert('Silahkan tulis ' + ph);
             $('#whatsapp .nowhatsapp').focus();
             return false;		
@@ -129,7 +129,7 @@
 				provinsi = $ ('#whatsapp .provinsi').val(),
                 nowhatsapp = $('#whatsapp .nowhatsapp').val(),
                 alamat = $('#whatsapp .alamat').val();
-            $(this).attr('href', url_wa + '?phone=08117515501'+ tujuan + '&text=Nama: ' + nama + ' %0ANo. Whatsapp: ' + provinsi +' %&text=provinsi:' + nowhatsapp + '%0AAlamat: ' + alamat + ' %0A%0Avia ' + via_url);
+            $(this).attr('href', url_wa + '?phone=08117515501'+ tujuan + '&text=Nama: ' + nama + ' %0ANo. Whatsapp: ' + kecamatan +' %&text=kecamatan:' + nowhatsapp + '%0AAlamat: ' + alamat + ' %0A%0Avia ' + via_url);
             var w = 960,
                 h = 540,
                 left = Number((screen.width / 2) - (w / 2)),
