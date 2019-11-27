@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
@@ -78,7 +78,7 @@
                 <input class="nowhatsapp" type="number" placeholder="Nomor Whatsapp..">
             </label>
             <label>
-                <input class="alamat" type="text" placeholder="Alamat Lengkap">
+                <input class="alamat" type="text" placeholder="Alamat..">
             </label>
             <a class="submit">Kirim ke WA Admin</a>
         </div>
@@ -126,10 +126,10 @@
             var tujuan = $('#whatsapp .tujuan').val(),
                 via_url = location.href,
                 nama = $('#whatsapp .nama').val(),
-				provinsi = $ ('#whatsapp .provinsi').val(),
+				kecamatan = $ ('#whatsapp .kecamatan').val(),
                 nowhatsapp = $('#whatsapp .nowhatsapp').val(),
                 alamat = $('#whatsapp .alamat').val();
-            $(this).attr('href', url_wa + '?phone=+628117515501'+ tujuan + '&text=Nama: ' + nama + ' %0ANo. Whatsapp: ' + kecamatan +' %&text=kecamatan:' + nowhatsapp + '%0AAlamat: ' + alamat + ' %0A%0Avia ' + via_url);
+            $(this).attr('href', url_wa + '?phone=08117515501'+ tujuan + '&text=Nama: ' + nama + ' %0ANo. Whatsapp: ' + kecamatan +' %&text=kecamatan:' + nowhatsapp + '%0AAlamat: ' + alamat + ' %0A%0Avia ' + via_url);
             var w = 960,
                 h = 540,
                 left = Number((screen.width / 2) - (w / 2)),
